@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expo-Travel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+ 
+</head>
+<body>
+  <header>
+    <i class="fa fa-bars" aria-hidden="true" id="menu-bar"></i>
+    
+    
+    <a href="#" class="logo"><span>Expo</span>-Travel</a>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#book">Book</a>
+      <a href="#packages">Packages</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#review">Review</a>
+      <a href="#contact">Contact</a>
+    </nav>  
+
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here..">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+
+  <div class="login-form-container">
+    <i class="fa fa-times" aria-hidden="true" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">remember me</label>
+      <p>forget password? <a href="#">click here</a></p>
+      <p>don't have an acount? <a href="#">register now</a></p>
+
+    </form>
+  </div>
+
+  <!-- home section starts -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3> Explore Dream  adventure is worthwhile</h3>
+      <p>discover new places with us, adventure awaits</p>
+      <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+      <span class="vid-btn active" data-src="vid1.mp4"></span>
+      <span class="vid-btn" data-src="vid2.mp4"></span>
+      <span class="vid-btn" data-src="vid3.mp4"></span>
+      <span class="vid-btn" data-src="vid4.mp4"></span>
+      <span class="vid-btn" data-src="vid5.mp4"></span>
+      <span class="vid-btn" data-src="vid6.mp4"></span>
+      <span class="vid-btn" data-src="vid7.mp4"></span>
+    </div>
+
+    <div class="video-container">
+      <video src="vid1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+  </section>
+
+  <!-- home head section -->
+
+   <section class="book" id="book">
+
+   <h1 class="heading">
+   <span>b</span>
+   <span>o</span>
+   <span>o</span>
+   <span>k</span>
+   <span class="space"></span>
+   <span>n</span>
+   <span>o</span>
+   <span>w</span>
+  </h1>
+
+  <div class="row">
+    <div class="image">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/worldwide-travelling-pictures-3896192-3239808.png" alt="">
+    </div>
+
+    <form action="">
+      <div class="inputbox">
+        <h3>where to</h3>
+        <input type="text" placeholder="place name">
+      </div>
+      <div class="inputbox">
+        <h3>how many</h3>
+        <input type="number" placeholder="number of guests">
+      </div>
+      <div class="inputbox">
+        <h3>arrivals</h3>
+        <input type="date" >
+      </div>
+      <div class="inputbox">
+        <h3>leaving</h3>
+        <input type="date" >
+      </div>
+      <input type="submit" class="btn" value="book now">
+    </form>
+  </div>
+  </section>
+
+  <!-- Packages section -->
+
+  <section class="packages" id="packages">
+
+    <h1 class="heading">
+      <span>p</span>
+      <span>a</span>
+      <span>c</span>
+      <span>k</span>
+      <span>a</span>
+      <span>g</span>
+      <span>e</span>
+      <span>s</span>
+     </h1>
+
+     <div class="box-container">
+      <div class="box">
+        <img src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/destinations/images/desktop/bengaluru.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>bengaluru</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, officiis?</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price"> ₹5000.00 <span>₹7000.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Mysore-palace_600.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>mysuru</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price"> ₹4500.00 <span>₹6500.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://static.toiimg.com/thumb/msid-81094145,width-400,resizemode-4/81094145.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>hydrabad</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquam?</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price"> ₹3000.00 <span>₹5000.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="https://cdn.britannica.com/37/189837-050-F0AF383E/New-Delhi-India-War-Memorial-arch-Sir.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>Delhi</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price"> ₹11000.00 <span>₹15000.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>Mumbai</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price"> ₹8000.00 <span>₹1100.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="https://media2.thrillophilia.com/images/photos/000/013/460/original/Madikeri_Tourist_Places-by_Premnath_Thirumalaisamy-Flickr.jpg?gravity=center&width=1280&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i>Madikeri</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="price"> ₹5500.00 <span>₹8500.00</span></div>
+          <a href="#" class="btn">book now</a>
+        </div>
+      </div>
+     </div>
+  </section>
+
+  <!-- service section  -->
+
+    <section class="services" id="services">
+    <h1 class="heading">
+      <span>s</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+     </h1>
+
+     <div class="box-container">
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>affordable hotels</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam laborum, nostrum dicta ducimus incidunt eaque deleniti veniam iste voluptates?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>food and drinks</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam laborum, nostrum dicta ducimus incidunt eaque deleniti veniam iste voluptates?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>safety guide</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam laborum, nostrum dicta ducimus incidunt eaque deleniti veniam iste voluptates?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>around the world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam laborum, nostrum dicta ducimus incidunt eaque deleniti veniam iste voluptates?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>fastest travel</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam laborum, nostrum dicta ducimus incidunt eaque deleniti veniam iste voluptates?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>adventures</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquam laborum, nostrum dicta ducimus incidunt eaque deleniti veniam iste voluptates?</p>
+      </div>
+     </div>
+    </section>
+
+    <!-- Gallery section  -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+       </h1>
+
+       <div class="box-container">
+        <div class="box">
+          <img src="https://img.jagranjosh.com/images/2021/October/19102021/pisa.png" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/11/eifel-tower.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://hblimg.mmtcdn.com/content/hubble/img/bali/mmt/destination/m_bali_l_393_629.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/ae/34/b4/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_6e6bce8d9c67033ca4e5" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://www.touropia.com/gfx/d/tourist-attractions-in-the-usa/mount_rushmore.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://www.worldatlas.com/r/w1200/upload/bb/60/f3/shutterstock-389133124.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://adm.dookinternational.com/dook/images/country/XYwKYrjh1656324286.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWElMjB0b3VyaXNtfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202207/travel-g5834cbbb2_1280-sixteen_nine.jpg" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src=" https://i.pinimg.com/originals/2a/e3/02/2ae302a136f37408a8ec1b4b9e6997cf.png" alt="">
+          <div class="content">
+            <h3>amazing places</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, numquam.</p>
+            <a href="#" class="btn">see more</a>
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- Review section -->
+
+   <section class="review" id="review">
+    <h1 class="heading">
+      <span>r</span>
+      <span>e</span>
+      <span>v</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+     </h1>
+
+     <div class="swiper-container review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <h3>dr.bro (youtube vlogger)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti architecto cumque dignissimos.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="https://media.licdn.com/dms/image/C4E03AQHy_GIBri0Z6Q/profile-displayphoto-shrink_800_800/0/1598816412434?e=2147483647&v=beta&t=umEpsoGFA_c3Sapm_6KpmtWnNOx67mTOHH-he__U2_g" alt="">
+            <h3>varun vagish (youtube vlogger)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti architecto cumque dignissimos.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="https://jubileepost.in/en/wp-content/uploads/2021/07/varun-vageesh-310x165.jpg" alt="">
+            <h3>Deepanshu Sangwan (youtube vlogger)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti architecto cumque dignissimos.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ODVbHmL4-wltcUqc3XC8oPEWG9xyVCFF-w&usqp=CAU" alt="">
+            <h3>Priyanka Chandola (youtube vlogger)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti architecto cumque dignissimos.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+   </section>
+
+   <!-- section contact  -->
+        
+     <section class="contact">
+      <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+       </h1>
+       <div class="row">
+        <div class="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Noun_Project_World_Tour_icon_2962185.svg/2048px-Noun_Project_World_Tour_icon_2962185.svg.png" alt="">
+        </div>
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+          </div>
+          <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+          <input type="submit" class="btn" value="send message ">
+        </form>
+       </div>
+     </section>
+
+     <!-- footer section  -->
+     <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>i'm harshith, a product desinger, ui/ux, software developer from Bharat...</p>
+
+        </div>
+        <div class="box">
+          <h3>branch location</h3>
+          <a href="#">Bharat</a>
+          <a href="#">usa</a>
+          <a href="#">uk</a>
+          <a href="#">germany</a>
+          <a href="#">dubai</a>
+          <a href="#">south-africa</a>
+          <a href="#">nepal</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">Home</a>
+          <a href="#">Book</a>
+          <a href="#">Packages</a>
+          <a href="#">Services</a>
+          <a href="#">Gallery</a>
+          <a href="#">Review</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="https://instagram.com/the_harszh?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==">instagram</a>
+          <a href="https://www.youtube.com/@MasterChefcoder">youtube</a>
+          <a href="https://www.linkedin.com/in/harshith-sb-937732264">linkdin</a>
+          <a href="https://github.com/callmeharshith/callmeharshith">github</a>
+        </div>
+      </div>
+      <h1 class="credit">created by <span>mr. harshithkumar sb</span> || all rights resverd!</h1>
+     </section> 
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
